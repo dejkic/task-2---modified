@@ -36,7 +36,7 @@ function myFunc(elem) {
     }
     //console.log(suma);
     document.getElementById("content").innerHTML = generateMatrixHTML(matrix, numbersAround, elem);
-    document.getElementById("popuni").innerHTML=suma;
+    document.getElementById("popuni").innerHTML="Suma elemenata: "+suma;
 }
 
 //generisanje html koda za matricu
@@ -46,9 +46,9 @@ function generateMatrixHTML(matrix, numbersAround, target) {
         for (var j = 0; j < 10; j++) {
             html += "<span style='margin-right:10px; display: inline-block; width: 25px; height: 25px; text-align: center; padding: 5px; font-family: Arial";
             if(numbersAround.includes(matrix[i][j]))
-                html+="; background-color:red;";
+                html+="; background-color:red; color: white; border: 1px solid black; border-radius: 7%;"
             else if(target == matrix[i][j])
-                html += "; background-color: green;"
+                html += "; background-color: green; color: white; border: 1px solid black; border-radius: 7%;"
             html += "'>" + matrix[i][j] + "</span>";
         }
         html += "<br>";

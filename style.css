@@ -1,9 +1,12 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    
 }
 
-#popuni {
+#popuni, p {
     margin: 10px;
+    
 }
 
 input {
